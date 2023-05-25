@@ -1,0 +1,304 @@
+/* css for assamese keyboard user panel */
+.key {
+  position: relative;
+  margin: 0 0 0.5% 0.5%;
+  width: 6%;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #f9f9f9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-color: #e5e5e5;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+#ahom-keyboard {
+  position: fixed;
+  max-width: 66%;
+  bottom: 0;
+  padding: 10px;
+  background-color: #ededed;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+@media screen and (max-width: 1000px) {
+  #ahom-keyboard {
+    max-width: 99%;
+  }
+}
+
+#asm-keyboard {
+  position: fixed;
+  max-width: 59%;
+  bottom: 0;
+  padding: 10px;
+  background-color: #ededed;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+@media screen and (max-width: 1000px) {
+  #asm-keyboard {
+    max-width: 99%;
+  }
+}
+#asm-keyboard-mean {
+  position: fixed;
+  max-width: 66%;
+  bottom: 0;
+  padding: 10px;
+  background-color: #ededed;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+@media screen and (max-width: 1000px) {
+  #asm-keyboard-mean {
+    max-width: 99%;
+  }
+}
+
+#symbols {
+  max-width: 880px;
+  text-align: center;
+}
+#symbolsasm {
+  max-width: 880px;
+  text-align: center;
+}
+#char {
+  max-width: 880px;
+  text-align: center;
+}
+#charasm {
+  max-width: 880px;
+  text-align: center;
+}
+#vowasm {
+  max-width: 880px;
+  text-align: center;
+}
+
+#numeric {
+  position: relative;
+  max-width: 880px;
+  text-align: center;
+}
+#numericasm {
+  position: relative;
+  max-width: 880px;
+  text-align: center;
+}
+#conjunction {
+  position: relative;
+  max-width: 880px;
+  text-align: center;
+}
+.close-key {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  /* margin-bottom: 5px; */
+}
+
+.cloudsmain-tai-form {
+  margin-top: 70px;
+  max-width: 100%;
+  position: relative;
+}
+.cloud-color-div-tai-form {
+  position: relative;
+  width: 100%;
+  background-color: #f8f8f8;
+  height: auto;
+  padding-bottom: 100px;
+}
+.entry-heading {
+  font-family: gs;
+  font-size: 40px;
+  line-height: 27px;
+  font-weight: 700;
+  color: #343434;
+  letter-spacing: 0.1em;
+  transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg) translate3d(0, 0, 0);
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+}
+.hr-form {
+  border: none;
+  height: 3px;
+  width: 270px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* Set the hr color */
+  color: #353534; /* old IE */
+  background-color: #353534; /* Modern Browsers */
+  transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg) translate3d(0, 0, 0);
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+}
+
+.test {
+  font-family: NotoSerifAhom;
+  src: url(font/NotoSerifAhom-Regular.ttf);
+}
+.label-font {
+  font-family: gsBold;
+  font-size: 18px;
+  line-height: 27px;
+  color: #525252;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.close {
+  position: relative;
+  color: #dc3545;
+  cursor: pointer;
+  font-size: 50px;
+  top: -13px;
+}
+.close:hover {
+  color: #ffc107;
+}
+.close-color{
+  background-color: #2D3035;
+}
+.switch-toggle label{
+  cursor: pointer;
+  font-size: 14px !important;
+  font-weight: 550 !important;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.key-back {
+  position: relative;
+  margin: 0 0 0.5% 0.5%;
+  width: 6%;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #f9f9f9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-color: #e5e5e5;
+  cursor: pointer;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  line-height: 40px;
+  width: 70px;
+  height: 40px;
+}
+.key-back-1 {
+  position: relative;
+  margin: 0 0 0.5% 0.5%;
+  width: 6%;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #f9f9f9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-color: #e5e5e5;
+  cursor: pointer;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+}
+.key-enter {
+  position: relative;
+  margin: 0 0 0.5% 0.5%;
+  width: 6%;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #f9f9f9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-color: #e5e5e5;
+  cursor: pointer;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  line-height: 40px;
+  width: 90px;
+  height: 40px;
+}
+
+/* @media only screen and (min-width: 768px) {
+  .break-m{
+    display: none;
+  }
+} */
